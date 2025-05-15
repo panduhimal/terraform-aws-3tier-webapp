@@ -12,4 +12,11 @@ terraform {
 # Configure the AWS provider with the region specified by a variable
 provider "aws" {
   region = var.region
+
+  default_tags {
+    tags = {
+      Environment = "Dev"
+      Project     = "3TierWebApp"
+    }
+  }
 }
