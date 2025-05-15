@@ -1,0 +1,45 @@
+# Terraform state
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+
+# Terraform plan output
+*.tfplan
+
+# Terraform variable files
+*.tfvars
+*.tfvars.json
+
+# Sensitive files (override with caution)
+secrets.auto.tfvars
+terraform.tfvars
+
+# Terraform override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# Local .terraform directories
+.terraform/
+
+# Editor / OS-specific files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.bak
+*.tmp
+
+# Ignore Python cache if using automation scripts
+__pycache__/
+*.pyc
+
+# Optional: Lock file (if you want team members to use their own provider versions)
+#terraform.lock.hcl
