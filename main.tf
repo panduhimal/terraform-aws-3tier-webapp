@@ -1,5 +1,8 @@
 module "vpc" {
   source = "./modules/network"
 
+  az             = var.az
   vpc_cidr_block = var.vpc_cidr_block
+
+  public_subnet_cidr_block = var.public_subnet_cidr_block
 }
