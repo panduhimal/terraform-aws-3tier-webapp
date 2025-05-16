@@ -50,3 +50,8 @@ output "private_subnets_info" {
   }
 }
 
+output "public_subnet_nacl_id" {
+  description = "The ID of the NACL associated with Public Subnet."
+  value       = aws_network_acl.public_subnet_nacl.id
+}
+

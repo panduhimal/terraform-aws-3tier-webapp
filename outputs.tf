@@ -42,3 +42,8 @@ output "private_subnets_info" {
   description = "Private subnet info from network module."
   value       = module.vpc.private_subnets_info
 }
+
+output "public_subnet_nacl_id" {
+  description = "The ID of the NACL associated with Public Subnet."
+  value       = module.vpc.public_subnet_nacl_id
+}
