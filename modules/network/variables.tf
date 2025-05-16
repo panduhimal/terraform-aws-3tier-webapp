@@ -23,3 +23,11 @@ variable "public_subnet_name" {
   type        = string
   default     = "DemoPublicSubnet"
 }
+
+variable "private_subnets" {
+  description = "List of private subnets with CIDR and name."
+  type = list(object({
+    name       = string
+    cidr_block = string
+  }))
+}

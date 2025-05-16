@@ -38,3 +38,15 @@ output "public_rt_id" {
   value       = aws_route_table.public_rt.id
 }
 
+output "private_subnets_info" {
+  description = "Map of private subnet name to ID, CIDR block, and name."
+  value = {
+    for idx, subnet in aws_subnet.private_subnets :
+    var.private_subnets[idx].name => {
+      id         = subnet.id
+      cidr_block = subnet.cidr_block
+      name       = subnet.tags["Name"]
+    }
+  }
+}
+

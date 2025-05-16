@@ -37,3 +37,8 @@ output "public_rt_id" {
   description = "The ID of the Public Subnet Route Table."
   value       = module.vpc.public_rt_id
 }
+
+output "private_subnets_info" {
+  description = "Private subnet info from network module."
+  value       = module.vpc.private_subnets_info
+}
