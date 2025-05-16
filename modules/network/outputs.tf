@@ -55,3 +55,13 @@ output "public_subnet_nacl_id" {
   value       = aws_network_acl.public_subnet_nacl.id
 }
 
+output "private_app_subnet_nacl_id" {
+  description = "The ID of the NACL associated with Private Application Subnet."
+  value       = aws_network_acl.private_app_subnet_nacl.id
+}
+
+output "private_data_subnet_nacl_id" {
+  description = "The ID of the NACL associated with Private Data Subnet."
+  value       = aws_network_acl.private_data_subnet_nacl.id
+}
+
