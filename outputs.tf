@@ -57,3 +57,17 @@ output "private_data_subnet_nacl_id" {
   description = "The ID of the NACL associated with Private Data Subnet."
   value       = module.vpc.private_data_subnet_nacl_id
 }
+
+output "web_instance_public_id" {
+  description = "Public IP address of the web instance."
+  value       = module.web_instance.web_instance_public_ip
+}
+
+output "web_instance_public_dns" {
+  description = "Public DNS name of the web instance."
+  value       = module.web_instance.web_instance_public_dns
+}
+
+output "web_instance_subnet_id" {
+  value = module.web_instance.web_instance_subnet_id
+}

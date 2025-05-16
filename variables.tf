@@ -35,3 +35,9 @@ variable "private_subnets" {
     cidr_block = "10.0.2.0/24"
   }]
 }
+
+variable "instance_name" {
+  description = "The name for the web instance."
+  type        = string
+  default     = "DemoWebInstance"
+}

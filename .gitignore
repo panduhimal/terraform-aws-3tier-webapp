@@ -41,5 +41,10 @@ terraform.rc
 __pycache__/
 *.pyc
 
+# Ignore SSH private keys
+*.pem
+*.key
+*.pub
+keys/
 # Optional: Lock file (if you want team members to use their own provider versions)
 #terraform.lock.hcl
